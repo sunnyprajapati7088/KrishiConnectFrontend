@@ -1,3 +1,6 @@
+
+
+
 // import React, { useEffect,useState } from "react";
 // import { useLocation, useNavigate } from "react-router-dom";
 // import { useDispatch,useSelector } from "react-redux";
@@ -12,7 +15,7 @@
 //   useEffect(() => {
 //     const fetchOrder = async (farmerId) => {
 //       try {
-//         const response = await axios.get(`http://localhost:5000/order`);
+//         const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
 //         const filteredCrops = response.data.filter(
 //           (crop) => crop.farmer_id._id === farmerId
 //         );
@@ -121,7 +124,7 @@
   //   useEffect(() => {
   //     const fetchOrder = async (farmerId) => {
   //       try {
-  //         const response = await axios.get(`http://localhost:5000/order`);
+  //         const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
   //         const filteredCrops = response.data.filter(
   //           (crop) => crop.farmer_id._id === farmerId
   //         );
@@ -234,7 +237,7 @@
     useEffect(() => {
       const fetchOrder = async (farmerId) => {
         try {
-          const response = await axios.get(`http://localhost:5000/order`);
+          const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
           const filteredCrops = response.data.filter(
             (crop) => crop.farmer_id._id === farmerId
           );
@@ -265,7 +268,7 @@
     const handleSendOtp = async (order) => {
       try {
         setCurrentOrder(order);
-        const response = await axios.post(`http://localhost:5000/send-otp`, {
+        const response = await axios.post(`https://farmer-backend-i0k8.onrender.com/send-otp`, {
           email: order.buyer_id.email,
           orderId: order._id,
         });
@@ -281,7 +284,7 @@
     // Verify OTP
     const handleVerifyOtp = async () => {
       try {
-        const response = await axios.post(`http://localhost:5000/verify-otp`, {
+        const response = await axios.post(`https://farmer-backend-i0k8.onrender.com/verify-otp`, {
           otp,
           orderId: currentOrder._id,
         });

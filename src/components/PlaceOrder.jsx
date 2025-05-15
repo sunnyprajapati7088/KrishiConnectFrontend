@@ -11,7 +11,7 @@
 //     useEffect(() => {
 //       async function getFarmer(id) {
 //         const farmerObject = await axios.get(
-//           `http://localhost:5000/auth/users/${id}`
+//           `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
 //         );
 //         setFarmerData(farmerObject.data);
 //       }
@@ -45,7 +45,7 @@
 //           farmer_name: farmerData.name, // Replace with actual farmer's name
 //         };
 //         console.log(data)
-//       const response = await axios.post("http://localhost:5000/order/add",data );
+//       const response = await axios.post("https://farmer-backend-i0k8.onrender.com/order/add",data );
 
 //       // Redirect to a success page or display a success message
 //       console.log("Order placed successfully:", response.data);
@@ -112,7 +112,7 @@ function PlaceOrder() {
   useEffect(() => {
     async function getFarmer(id) {
       const farmerObject = await axios.get(
-        `http://localhost:5000/auth/users/${id}`
+        `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
       );
       setFarmerData(farmerObject.data);
     }
@@ -149,7 +149,7 @@ function PlaceOrder() {
       console.log(data);
 
       const response = await axios.post(
-        "http://localhost:5000/order/add",
+        "https://farmer-backend-i0k8.onrender.com/order/add",
         data
       );
       console.log(response.data)

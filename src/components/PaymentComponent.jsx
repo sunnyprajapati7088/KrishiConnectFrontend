@@ -10,7 +10,7 @@ const PaymentPage = () => {
   // Fetch order details
   const fetchOrder = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/order/${id}`);
+      const res = await axios.get(`https://farmer-backend-i0k8.onrender.com/order/${id}`);
       setSelectedCrops(res.data);
       setTotalAmount(res.data.amount);
     } catch (error) {

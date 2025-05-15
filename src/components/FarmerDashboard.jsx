@@ -40,7 +40,7 @@
 //   // Fetch farmer data
 //   async function getFarmer(id) {
 //     const farmerObject = await axios.get(
-//       `http://localhost:5000/auth/users/${id}`
+//       `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
 //     );
 //     setFarmerData(farmerObject.data);
 //   }
@@ -48,7 +48,7 @@
 //   // Fetch all crops for the logged-in farmer
 //   const fetchCrops = async (id) => {
 //     try {
-//       const response = await axios.get(`http://localhost:5000/crops`);
+//       const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/crops`);
 //       const filteredCrops = response.data.filter(
 //         (crop) => crop.farmer_id._id === id
 //       );
@@ -94,7 +94,7 @@
 //   // Add a new crop
 //   const addCrop = async () => {
 //     try {
-//       const response = await axios.post("http://localhost:5000/crops/add", {
+//       const response = await axios.post("https://farmer-backend-i0k8.onrender.com/crops/add", {
 //         ...newCrop,
 //         farmer_id: id,
 //       });
@@ -123,7 +123,7 @@
 //   const updateCrop = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/crops/update/${editingCrop._id}`,
+//         `https://farmer-backend-i0k8.onrender.com/crops/update/${editingCrop._id}`,
 //         newCrop
 //       );
 //       // Update the crops list with the updated crop
@@ -142,7 +142,7 @@
 //   // Delete crop
 //   const deleteCrop = async (cropId) => {
 //     try {
-//       await axios.delete(`http://localhost:5000/crops/delete/${cropId}`);
+//       await axios.delete(`https://farmer-backend-i0k8.onrender.com/crops/delete/${cropId}`);
 //       setCrops((prevCrops) => prevCrops.filter((crop) => crop._id !== cropId));
 //       showPopup("Crop deleted successfully!");
 //     } catch (error) {
@@ -312,7 +312,7 @@
 //   // Fetch farmer data
 //   async function getFarmer(id) {
 //     const farmerObject = await axios.get(
-//       `http://localhost:5000/auth/users/${id}`
+//       `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
 //     );
 //     setFarmerData(farmerObject.data);
 //   }
@@ -320,7 +320,7 @@
 //   // Fetch all crops for the logged-in farmer
 //   const fetchCrops = async (id) => {
 //     try {
-//       const response = await axios.get(`http://localhost:5000/crops`);
+//       const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/crops`);
 //       const filteredCrops = response.data.filter(
 //         (crop) => crop.farmer_id._id === id
 //       );
@@ -375,7 +375,7 @@
 //     }
 
 //     try {
-//       const response = await axios.post("http://localhost:5000/crops/add", {
+//       const response = await axios.post("https://farmer-backend-i0k8.onrender.com/crops/add", {
 //         ...newCrop,
 //         farmer_id: id,
 //       });
@@ -404,7 +404,7 @@
 //   const updateCrop = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/crops/update/${editingCrop._id}`,
+//         `https://farmer-backend-i0k8.onrender.com/crops/update/${editingCrop._id}`,
 //         newCrop
 //       );
 //       // Update the crops list with the updated crop
@@ -423,7 +423,7 @@
 //   // Delete crop
 //   const deleteCrop = async (cropId) => {
 //     try {
-//       await axios.delete(`http://localhost:5000/crops/delete/${cropId}`);
+//       await axios.delete(`https://farmer-backend-i0k8.onrender.com/crops/delete/${cropId}`);
 //       setCrops((prevCrops) => prevCrops.filter((crop) => crop._id !== cropId));
 //       showPopup("Crop deleted successfully!");
 //     } catch (error) {
@@ -594,7 +594,7 @@
 //   const getFarmer = async (farmerId) => {
 //     try {
 //       const response = await axios.get(
-//         `http://localhost:5000/auth/users/${farmerId}`
+//         `https://farmer-backend-i0k8.onrender.com/auth/users/${farmerId}`
 //       );
 //       setFarmerData(response.data);
 //     } catch (error) {
@@ -605,7 +605,7 @@
 //   // Fetch all crops for the logged-in farmer
 //   const fetchCrops = async (farmerId) => {
 //     try {
-//       const response = await axios.get(`http://localhost:5000/crops`);
+//       const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/crops`);
 //       const filteredCrops = response.data.filter(
 //         (crop) => crop.farmer_id === farmerId
 //       );
@@ -617,7 +617,7 @@
 
 //   const fetchOrder = async (farmerId) => {
 //     try {
-//       const response = await axios.get(`http://localhost:5000/order`);
+//       const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
 //       const filteredCrops = response.data.filter(
 //         (crop) => crop.farmer_id._id === farmerId
 //       );
@@ -673,7 +673,7 @@
 //     }
 
 //     try {
-//       const response = await axios.post("http://localhost:5000/crops/add", {
+//       const response = await axios.post("https://farmer-backend-i0k8.onrender.com/crops/add", {
 //         ...newCrop,
 //         farmer_id: id,
 //       });
@@ -701,7 +701,7 @@
 //   const updateCrop = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/crops/update/${editingCrop._id}`,
+//         `https://farmer-backend-i0k8.onrender.com/crops/update/${editingCrop._id}`,
 //         newCrop
 //       );
 //       setCrops(
@@ -719,7 +719,7 @@
 //   // Delete crop
 //   const deleteCrop = async (cropId) => {
 //     try {
-//       await axios.delete(`http://localhost:5000/crops/delete/${cropId}`);
+//       await axios.delete(`https://farmer-backend-i0k8.onrender.com/crops/delete/${cropId}`);
 //       setCrops(crops.filter((crop) => crop._id !== cropId));
 //       showPopup("Crop deleted successfully!");
 //     } catch (error) {
@@ -927,7 +927,7 @@ const FarmerDashboard = () => {
   const getFarmer = async (farmerId) => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/auth/users/${farmerId}"
+        "https://farmer-backend-i0k8.onrender.com/auth/users/${farmerId}"
       );
       setFarmerData(response.data);
     } catch (error) {
@@ -938,7 +938,7 @@ const FarmerDashboard = () => {
   // Fetch all crops for the logged-in farmer
   const fetchCrops = async (farmerId) => {
     try {
-      const response = await axios.get("http://localhost:5000/crops");
+      const response = await axios.get("https://farmer-backend-i0k8.onrender.com/crops");
       console.log(response)
       const filteredCrops = response.data.filter(
         (crop) => crop.farmer_id._id === farmerId
@@ -952,7 +952,7 @@ const FarmerDashboard = () => {
  
   const fetchOrder = async (farmerId) => {
     try {
-      const response = await axios.get("http://localhost:5000/order");
+      const response = await axios.get("https://farmer-backend-i0k8.onrender.com/order");
       const filteredCrops = response.data.filter(
         (crop) => crop.farmer_id._id === farmerId
       );
@@ -1009,7 +1009,7 @@ const FarmerDashboard = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/crops/add", {
+      const response = await axios.post("https://farmer-backend-i0k8.onrender.com/crops/add", {
         ...newCrop,
         farmer_id: id,
       });
@@ -1037,7 +1037,7 @@ const FarmerDashboard = () => {
   const updateCrop = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:5000/crops/update/${editingCrop._id}",
+        "https://farmer-backend-i0k8.onrender.com/crops/update/${editingCrop._id}",
         newCrop
       );
       setCrops(
@@ -1055,7 +1055,7 @@ const FarmerDashboard = () => {
   // Delete crop
   const deleteCrop = async (cropId) => {
     try {
-      await axios.delete("http://localhost:5000/crops/delete/${cropId}");
+      await axios.delete("https://farmer-backend-i0k8.onrender.com/crops/delete/${cropId}");
       setCrops(crops.filter((crop) => crop._id !== cropId));
       showPopup("Crop deleted successfully!");
     } catch (error) {

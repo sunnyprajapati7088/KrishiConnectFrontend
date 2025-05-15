@@ -27,7 +27,7 @@
 //         const userId = user; // Get the user ID from the stored user object
 
 //         // Fetch orders from the API
-//         const response = await axios.get(`http://localhost:5000/order`);
+//         const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
 //         const filteredCrops = response.data.filter(
 //           (crop) => crop.buyer_id._id === userId
 //         );
@@ -43,7 +43,7 @@
 //   useEffect(() => {
 //     const fetchCrops = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/crops");
+//         const response = await axios.get("https://farmer-backend-i0k8.onrender.com/crops");
 //         const cropsWithFarmerInfo = response.data.map((crop) => ({
 //           ...crop,
 //           farmer_phone: crop.farmer_phone || "Not Available",
@@ -60,7 +60,7 @@
 //     const fetchBuyerData = async () => {
 //       try {
 //         const response = await axios.get(
-//           `http://localhost:5000/auth/users/${id}`
+//           `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
 //         );
 //         setBuyerData(response.data);
 //       } catch (error) {
@@ -283,7 +283,7 @@ const UserDashboard = () => {
         const userId = user; // Get the user ID from the stored user object
 
         // Fetch orders from the API
-        const response = await axios.get(`http://localhost:5000/order`);
+        const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
         const filteredCrops = response.data.filter(
           (crop) => crop.buyer_id._id === userId
         );
@@ -300,7 +300,7 @@ const UserDashboard = () => {
   useEffect(() => {
     const fetchCrops = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/crops");
+        const response = await axios.get("https://farmer-backend-i0k8.onrender.com/crops");
         console.log(response)
         const cropsWithFarmerInfo = response.data.map((crop) => ({
           ...crop,
@@ -318,7 +318,7 @@ const UserDashboard = () => {
     const fetchBuyerData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/auth/users/${id}`
+          `https://farmer-backend-i0k8.onrender.com/auth/users/${id}`
         );
         setBuyerData(response.data);
       } catch (error) {

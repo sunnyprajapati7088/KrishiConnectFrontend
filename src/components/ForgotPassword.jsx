@@ -13,7 +13,7 @@ const ForgotPassword = () => {
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/auth/send-otp", {
+      const response = await axios.post("https://farmer-backend-i0k8.onrender.com/auth/send-otp", {
         phone_number: phoneNumber,
       });
       setMessage(response.data.message);
@@ -29,7 +29,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/verify-otp",
+        "https://farmer-backend-i0k8.onrender.com/auth/verify-otp",
         {
           phone_number: phoneNumber, // Include phone_number in the request
           otp,

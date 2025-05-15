@@ -21,7 +21,7 @@ export default function UpdateStatus() {
                 console.log(status)
                 // API call to update status in the database for a specific order
                 const response = await axios.put(
-                  `http://localhost:5000/order/update/${id}`,{status:status}
+                  `https://farmer-backend-i0k8.onrender.com/order/update/${id}`,{status:status}
                 );
              
                     alert("success to update status");

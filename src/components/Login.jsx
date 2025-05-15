@@ -22,7 +22,7 @@
 //     e.preventDefault();
 //     try {
 //       const response = await axios.post(
-//         "http://localhost:5000/auth/login",
+//         "https://farmer-backend-i0k8.onrender.com/auth/login",
 //         formData
 //       );
 //       localStorage.setItem("token", response.data.token);
@@ -136,7 +136,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://farmer-backend-i0k8.onrender.com/auth/login",
         formData
       );
       localStorage.setItem("token", response.data.token);
@@ -262,7 +262,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://farmer-backend-i0k8.onrender.com/auth/login",
         formData
       );
       localStorage.setItem("token", response.data.token);

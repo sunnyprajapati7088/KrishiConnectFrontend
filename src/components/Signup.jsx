@@ -786,7 +786,7 @@ const statesWithDistricts = {
 //     e.preventDefault();
 //     try {
 //       const response = await axios.post(
-//         "http://localhost:5000/auth/signup",
+//         "https://farmer-backend-i0k8.onrender.com/auth/signup",
 //         formData
 //       );
 //       setMessage(response.data.message);
@@ -978,7 +978,7 @@ const statesWithDistricts = {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/signup",
+        "https://farmer-backend-i0k8.onrender.com/auth/signup",
         formData
       );
       setMessage(response.data.message);
@@ -1179,7 +1179,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/signup",
+        "https://farmer-backend-i0k8.onrender.com/auth/signup",
         formData
       );
       setMessage(response.data.message);

@@ -19,7 +19,7 @@
 //         console.log("User ID from localStorage:", userId);
 
 //         // Fetch orders from the API
-//         const response = await axios.get(`http://localhost:5000/order`);
+//         const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
 //         console.log("Response data:", response.data);
 
 //         // Filter crops based on the user's ID
@@ -132,7 +132,7 @@ import axios from "axios";
 //         const user = JSON.parse(storedUser);
 //         const userId = user;
 
-//         const response = await axios.get(`http://localhost:5000/order`);
+//         const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
 //         const filteredCrops = response.data.filter(
 //           (crop) => crop.buyer_id._id === userId
 //         );
@@ -151,7 +151,7 @@ import axios from "axios";
 //     );
 //     if (confirmation) {
 //       try {
-//         await axios.delete(`http://localhost:5000/order/${orderId}`);
+//         await axios.delete(`https://farmer-backend-i0k8.onrender.com/order/${orderId}`);
 //         setOrders(orders.filter((ord) => ord._id !== orderId));
 //       } catch (error) {
 //         console.error("Error deleting order", error);
@@ -250,7 +250,7 @@ export default function UserOrder() {
         const user = JSON.parse(storedUser);
         const userId = user;
 
-        const response = await axios.get(`http://localhost:5000/order`);
+        const response = await axios.get(`https://farmer-backend-i0k8.onrender.com/order`);
         const filteredCrops = response.data.filter(
           (crop) => crop.buyer_id._id === userId
         );
@@ -269,7 +269,7 @@ export default function UserOrder() {
     );
     if (confirmation) {
       try {
-        await axios.delete(`http://localhost:5000/order/delete/${orderId}`);
+        await axios.delete(`https://farmer-backend-i0k8.onrender.com/order/delete/${orderId}`);
         // Use the functional form of setState to update the orders list immediately
         setOrders((prevOrders) => prevOrders.filter((ord) => ord._id !== orderId));
       } catch (error) {
